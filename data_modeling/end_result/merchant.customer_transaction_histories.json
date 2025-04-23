@@ -1,0 +1,46 @@
+[
+  {
+    "transaction_id": "T1234567890",
+    "date": "2023-09-01",
+    "type": "Debit",
+    "amount": 250,
+    "currency": "USD",
+    "merchant": "Amazon",
+    "category": "Shopping",
+    "status": "Completed",
+    "customer_id": "123456789"
+  },
+  {
+    "transaction_id": "T2234567890",
+    "date": "2024-09-00",
+    "type": "Debit",
+    "amount": 250,
+    "currency": "USD",
+    "merchant": "Amazon",
+    "category": "Shopping",
+    "status": "Completed",
+    "customer_id": "123456789"
+  },
+  {
+    "transaction_id": "T2234567891",
+    "date": "2024-09-01",
+    "type": "Debit",
+    "amount": 251,
+    "currency": "USD",
+    "merchant": "Amazon",
+    "category": "Shopping",
+    "status": "Completed",
+    "customer_id": "123456789"
+  },
+  {
+    "transaction_id": "T2234567892",
+    "date": "2024-09-02",
+    "type": "Debit",
+    "amount": 252,
+    "currency": "USD",
+    "merchant": "Amazon",
+    "category": "Shopping",
+    "status": "Completed",
+    "customer_id": "123456789"
+  }
+]

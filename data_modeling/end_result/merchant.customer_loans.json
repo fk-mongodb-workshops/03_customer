@@ -1,0 +1,13 @@
+[
+  {
+    "loan_id": "L9876543210",
+    "loan_type": "Personal",
+    "amount": 25000,
+    "outstanding_balance": 10000,
+    "interest_rate": 5.5,
+    "start_date": "2020-01-15",
+    "end_date": "2025-01-15",
+    "status": "Active",
+    "customer_id": "123456789"
+  }
+]

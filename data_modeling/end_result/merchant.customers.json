@@ -1,0 +1,111 @@
+[
+  {
+    "customer_id": "123456789",
+    "personal_details": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "date_of_birth": "1990-01-01",
+      "gender": "Male",
+      "marital_status": "Single",
+      "contact": {
+        "email": "john.doe@example.com",
+        "phone": "+1234567890",
+        "address": {
+          "street": "123 Elm Street",
+          "city": "Springfield",
+          "state": "IL",
+          "zip_code": "62701",
+          "country": "USA"
+        }
+      },
+      "identification": {
+        "social_security_number": "123-45-6789",
+        "passport_number": "X1234567",
+        "driver_license": "D1234567"
+      }
+    },
+    "accounts": [
+      {
+        "account_number": "1234567890123456",
+        "account_type": "Checking",
+        "balance": 1500.75,
+        "currency": "USD",
+        "branch_id": "001",
+        "opened_date": "2015-03-25",
+        "status": "Active"
+      },
+      {
+        "account_number": "9876543210987654",
+        "account_type": "Savings",
+        "balance": 10000.5,
+        "currency": "USD",
+        "branch_id": "002",
+        "opened_date": "2017-08-15",
+        "status": "Active"
+      }
+    ],
+    "credit_cards": [
+      {
+        "card_number": "4111111111111111",
+        "card_type": "Visa",
+        "credit_limit": 5000,
+        "available_credit": 3000,
+        "expiry_date": "2025-12-31",
+        "status": "Active"
+      }
+    ],
+    "loans": [
+      {
+        "loan_id": "L9876543210",
+        "loan_type": "Personal",
+        "amount": 25000,
+        "outstanding_balance": 10000,
+        "interest_rate": 5.5,
+        "start_date": "2020-01-15",
+        "end_date": "2025-01-15",
+        "status": "Active"
+      }
+    ],
+    "transaction_history": [
+      {
+        "transaction_id": "T1234567890",
+        "date": "2023-09-01",
+        "type": "Debit",
+        "amount": 250,
+        "currency": "USD",
+        "merchant": "Amazon",
+        "category": "Shopping",
+        "status": "Completed"
+      },
+      {
+        "transaction_id": "T0987654321",
+        "date": "2023-09-05",
+        "type": "Credit",
+        "amount": 500,
+        "currency": "USD",
+        "merchant": "Payroll",
+        "category": "Salary",
+        "status": "Completed"
+      }
+    ],
+    "preferences": {
+      "communication": {
+        "email": true,
+        "sms": true,
+        "phone": false,
+        "mail": false
+      },
+      "language": "English",
+      "marketing_consent": true
+    },
+    "customer_relationships": {
+      "relationship_manager_id": "RM123456",
+      "relationship_manager_name": "Jane Smith"
+    },
+    "risk_profile": {
+      "risk_level": "Moderate",
+      "risk_score": 65,
+      "last_assessment_date": "2023-07-20"
+    }
+  }
+]

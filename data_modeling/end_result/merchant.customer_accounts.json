@@ -1,0 +1,12 @@
+[
+  {
+    "account_number": "1234567890123456",
+    "account_type": "Checking",
+    "balance": 1500.75,
+    "currency": "USD",
+    "branch_id": "001",
+    "opened_date": "2015-03-25",
+    "status": "Active",
+    "customer_id": "123456789"
+  }
+]
