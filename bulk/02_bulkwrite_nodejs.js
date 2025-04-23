@@ -24,11 +24,13 @@ const main = async () => {
             "customer_id": "123456789"
         })
     }
+
+    // https://www.mongodb.com/docs/drivers/node/current/usage-examples/bulkWrite/
     await client.db("merchant").collection("customer_transaction_histories").bulkWrite([
         {
             insertOne: {
                 document: {
-                    "transaction_id": "Z223456789",
+                    "transaction_id": "U223456789",
                     "date": "2024-10-01",
                     "type": "Debit",
                     "amount": 300,
@@ -39,6 +41,15 @@ const main = async () => {
                     "customer_id": "123456789"
                 },
             },
+        },
+        {
+            updateMany: {
+                filter: { amount: { $gte: 300 } },
+                update: { $set: { high_transaction: true } }
+            },
+        },
+        {
+            deleteOne: { filter: { amount: { $gte: 301 } } }
         }
     ])
 
