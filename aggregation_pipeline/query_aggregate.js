@@ -10,17 +10,14 @@ const main = async () => {
 
     const coll = client.db("merchant").collection("customer_transaction_histories");
 
-    const pipeline = [
-        {
-            $match: {
-                amount: { $gte: 250 },
-                customer_id: '123456789'
-            }
-        },
-        { $project: { _id: 0, customer_id: 0 } },
-        { $sort: { amount: -1 } },
-        { $limit: 5 }
-    ]
+    const pipeline =
+        [
+            { $match: { amount: { $gte: 250 } } },
+            { $project: { _id: 0 } },
+            { $limit: 5 },
+            { $sort: { amount: -1 } }
+        ]
+
 
     const params = { maxTimeMS: 60000, allowDiskUse: true }
 

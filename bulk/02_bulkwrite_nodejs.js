@@ -44,7 +44,13 @@ const main = async () => {
         },
         {
             updateMany: {
-                filter: { amount: { $gte: 300 } },
+                filter: { 
+                    $or: [
+                        { amount: { $gte: 300 }},
+                        { amount: { $gte: 300 } }
+                    ]
+                   
+                },
                 update: { $set: { high_transaction: true } }
             },
         },

@@ -9,7 +9,7 @@ const main = async () => {
     await client.connect();
 
     const coll = client.db("merchant").collection("customer_transaction_histories");
-
+    
     let datas = [];
     for (let i = 0; i < 10; i++) {
         datas.push({
