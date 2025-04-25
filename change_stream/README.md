@@ -4,6 +4,8 @@
 
 First of all, you need to have a working replicaset. You can use Atlas cluster or run in your machine using docker-compose. Refer [here](https://github.com/fk-mongodb-workshops/04_docker/tree/main/02_replicaset) to setup a replicaset in your own machine using docker-compose.
 
+Then you need map these 3 host aliases: database1, database2, and database3 for your localhost IP 127.0.0.1
+
 ## Execute the program
 ### Install Node packages
 ```
